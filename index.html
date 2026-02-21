@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlightenment — Выбор версии</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, sans-serif;
+            background: linear-gradient(180deg, #1a0a2e, #2d1b4e);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f5e6c8;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 { margin-bottom: 2rem; color: #d4af37; }
+        .links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+        a {
+            display: block;
+            padding: 1.5rem 2.5rem;
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid #d4af37;
+            color: #f5e6c8;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        a:hover {
+            background: rgba(212, 175, 55, 0.4);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enlightenment</h1>
+        <p style="margin-bottom: 2rem; opacity: 0.9;">Выберите версию сайта</p>
+        <div class="links">
+            <a href="1/index.html">Версия 1 — с изображениями</a>
+            <a href="2/index.html">Версия 2 — интерактивная</a>
+        </div>
+    </div>
+</body>
+</html>
