@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlightenment — Практики и Ретриты в Священной Долине</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-layer"></div>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="#practices">Практики</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#valley">Долина</a>
+            <a href="#retreat">Ретрит</a>
+            <a href="#about">О нас</a>
+            <a href="#ceremonies">Церемонии</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <div class="hero">
+            <span class="om">ॐ</span>
+            <h1>Enlightenment</h1>
+            <p>Практики, техники и ретриты в Священной Долине</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="practices" class="block">
+            <h2>Наши практики</h2>
+            <div class="img-wrap img-services">
+                <img src="assets/services.png" alt="Практики" width="800" height="600" loading="lazy">
+            </div>
+            <div class="cards">
+                <button class="card gold" data-service="somaya">SOMAYA</button>
+                <button class="card gold" data-service="medicina">Medicina Sagrada</button>
+                <button class="card gold" data-service="ceremony-online">Ceremony Online</button>
+                <button class="card" data-service="soma">SOMA</button>
+                <button class="card" data-service="kundalini">Kundalini Yoga</button>
+                <button class="card" data-service="mentoring">Mentoring</button>
+                <button class="card" data-service="mentoring-online">Mentoring Online</button>
+            </div>
+        </section>
+
+        <section id="schedule" class="block">
+            <h2>Недельное расписание</h2>
+            <div class="img-wrap img-schedule">
+                <img src="assets/schedule.png" alt="Расписание" width="600" height="400" loading="lazy" onerror="this.src='assets/schedule-placeholder.svg'">
+            </div>
+            <div class="schedule-tabs">
+                <button class="tab active" data-day="0">Пн</button>
+                <button class="tab" data-day="1">Вт</button>
+                <button class="tab" data-day="2">Ср</button>
+                <button class="tab" data-day="3">Чт</button>
+                <button class="tab" data-day="4">Пт</button>
+                <button class="tab" data-day="5">Сб</button>
+                <button class="tab" data-day="6">Вс</button>
+            </div>
+            <div class="schedule-list" id="schedule-list"></div>
+        </section>
+
+        <section id="valley" class="block">
+            <h2>Предложения в Священной Долине</h2>
+            <div class="text-block">
+                <p>Погрузитесь в атмосферу Священной Долины — места силы. Ретриты, церемонии и индивидуальные сессии в окружении природы.</p>
+            </div>
+        </section>
+
+        <section id="retreat" class="block">
+            <h2>Базовая программа ретрита</h2>
+            <div class="text-block">
+                <ul>
+                    <li>Утренние практики кундалини-йоги</li>
+                    <li>Церемонии и медитации</li>
+                    <li>Работа с Medicina Sagrada</li>
+                    <li>Менторство и индивидуальные сессии</li>
+                    <li>Практики SOMA и SOMAYA</li>
+                    <li>Питание и интеграция</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="block">
+            <h2>Кто мы</h2>
+            <div class="about-row">
+                <div class="img-wrap img-family">
+                    <img src="assets/who-we-are.png" alt="Наша семья" width="400" height="400" loading="lazy">
+                </div>
+                <div class="text-block">
+                    <p>Мы — семья практиков, объединённых любовью к духовным традициям и желанием делиться светом. Создаём пространство для пробуждения и трансформации в Священной Долине.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ceremonies" class="block">
+            <h2>Индивидуальные церемонии</h2>
+            <div class="text-block">
+                <p>Проводим индивидуальные церемонии в очном и онлайн формате. Каждая церемония — глубокое путешествие с учётом ваших потребностей.</p>
+                <a href="#contact" class="btn">Записаться</a>
+            </div>
+        </section>
+
+        <section id="contact" class="block">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-row">
+                <div class="qr-wrap">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https%3A%2F%2Fwa.me%2F79001234567" alt="QR" width="140" height="140" loading="lazy">
+                </div>
+                <div class="contact-links">
+                    <a href="https://t.me/username" target="_blank" rel="noopener">Telegram</a>
+                    <a href="https://wa.me/79001234567" target="_blank" rel="noopener">WhatsApp</a>
+                    <a href="mailto:hello@example.com">Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Enlightenment — Свет и практики в Священной Долине</p>
+    </footer>
+
+    <dialog id="modal" class="modal">
+        <div class="modal-inner">
+            <button class="modal-close" type="button" aria-label="Закрыть">&times;</button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
