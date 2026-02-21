@@ -4,49 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enlightenment — Практики и Ретриты в Священной Долине</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stars"></div>
-    
+    <div class="bg-stars"></div>
+    <div class="bg-glow"></div>
+
+    <nav class="nav">
+        <a href="#practices">Практики</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#valley">Долина</a>
+        <a href="#retreat">Ретрит</a>
+        <a href="#about">О нас</a>
+        <a href="ceremony/">Церемонии</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
     <header class="hero">
-        <h1>Enlightenment</h1>
-        <p>Практики, техники и ретриты в Священной Долине</p>
+        <div class="hero-om">ॐ</div>
+        <h1 class="hero-title">Enlightenment</h1>
+        <p class="hero-subtitle">Практики, техники и ретриты в Священной Долине</p>
     </header>
 
     <main>
-        <section>
-            <h2>Наши практики</h2>
+        <section id="practices" class="section">
+            <h2 class="section-title">Наши практики</h2>
             <div class="services">
-                <span class="card gold">SOMAYA</span>
-                <span class="card gold">Medicina Sagrada</span>
-                <span class="card gold">Ceremony Online</span>
-                <span class="card">SOMA</span>
-                <span class="card">Kundalini Yoga</span>
-                <span class="card">Mentoring</span>
-                <span class="card">Mentoring Online</span>
+                <div class="service-card gold">SOMAYA</div>
+                <div class="service-card gold">Medicina Sagrada</div>
+                <div class="service-card gold">Ceremony Online</div>
+                <div class="service-card">SOMA</div>
+                <div class="service-card">Kundalini Yoga</div>
+                <div class="service-card">Mentoring</div>
+                <div class="service-card">Mentoring Online</div>
             </div>
         </section>
 
-        <section>
-            <h2>Недельное расписание</h2>
-            <div class="schedule-box">
-                <img src="img/schedule.png" alt="Расписание" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <div class="schedule-placeholder" style="display:none">Загрузите img/schedule.png</div>
+        <section id="schedule" class="section">
+            <h2 class="section-title">Недельное расписание</h2>
+            <div class="schedule-block">
+                <img src="img/schedule.png" alt="Расписание" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                <div class="schedule-placeholder" style="display:none">
+                    <span>Загрузите img/schedule.png</span>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>Предложения в Священной Долине</h2>
-            <div class="box">
-                <p>Погрузитесь в атмосферу Священной Долины — места силы. Ретриты, церемонии и индивидуальные сессии в окружении природы.</p>
+        <section id="valley" class="section">
+            <h2 class="section-title">Предложения в Священной Долине</h2>
+            <div class="content-block">
+                <p>Погрузитесь в атмосферу Священной Долины — места силы, где древние традиции встречаются с современными практиками. Ретриты, церемонии и индивидуальные сессии в окружении природы.</p>
             </div>
         </section>
 
-        <section>
-            <h2>Базовая программа ретрита</h2>
-            <div class="box">
-                <ul>
+        <section id="retreat" class="section">
+            <h2 class="section-title">Базовая программа ретрита</h2>
+            <div class="content-block">
+                <ul class="program-list">
                     <li>Утренние практики кундалини-йоги</li>
                     <li>Церемонии и медитации</li>
                     <li>Работа с Medicina Sagrada</li>
@@ -57,40 +74,45 @@
             </div>
         </section>
 
-        <section>
-            <h2>Кто мы</h2>
-            <div class="who">
-                <div class="photo">
+        <section id="about" class="section">
+            <h2 class="section-title">Кто мы</h2>
+            <div class="about-block">
+                <div class="about-photo">
                     <img src="img/photo.png" alt="Мы" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
                     <div class="photo-placeholder" style="display:none">Фото</div>
                 </div>
-                <div class="box">
-                    <p>Мы — семья практиков, объединённых любовью к духовным традициям. Создаём пространство для пробуждения и трансформации в Священной Долине.</p>
+                <div class="content-block about-text">
+                    <p>Мы — семья практиков, объединённых любовью к духовным традициям и желанием делиться светом. Наш путь ведёт через Священную Долину, где мы создаём пространство для пробуждения и трансформации.</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Индивидуальные церемонии</h2>
-            <div class="box">
-                <p>Проводим индивидуальные церемонии очно и онлайн. <a href="ceremony/">Подробнее и запись →</a></p>
+        <section class="section">
+            <h2 class="section-title">Индивидуальные церемонии</h2>
+            <div class="content-block">
+                <p>Проводим индивидуальные церемонии в очном и онлайн формате. Каждая церемония — глубокое путешествие с учётом ваших потребностей.</p>
+                <a href="ceremony/" class="link-btn">Подробнее и запись →</a>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Контакты</h2>
-            <div class="qr-box">
-                <img src="img/qr.png" alt="QR" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-                <div class="qr-placeholder" style="display:none">QR: img/qr.png</div>
-            </div>
-            <div class="contacts">
-                <p>Telegram: <a href="https://t.me/username">@username</a></p>
-                <p>WhatsApp: <a href="https://wa.me/79001234567">+7 900 123-45-67</a></p>
-                <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contact-block">
+                <div class="qr-block">
+                    <img src="img/qr.png" alt="QR" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="qr-placeholder" style="display:none">img/qr.png</div>
+                </div>
+                <div class="contact-links">
+                    <a href="https://t.me/username" class="contact-btn" target="_blank" rel="noopener">Telegram</a>
+                    <a href="https://wa.me/79001234567" class="contact-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    <a href="mailto:hello@example.com" class="contact-btn">Email</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>Enlightenment — Свет и практики в Священной Долине</footer>
+    <footer class="footer">
+        <p>Enlightenment — Свет и практики в Священной Долине</p>
+    </footer>
 </body>
 </html>

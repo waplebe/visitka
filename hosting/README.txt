@@ -1,25 +1,25 @@
-ЗАГРУЗКА НА REG.RU
-=================
+ENLIGHTENMENT — ЗАГРУЗКА НА REG.RU
+================================
 
-1. Зайдите в панель управления reg.ru
-2. Откройте "Файловый менеджер" или подключитесь по FTP
-3. Перейдите в папку public_html (или www)
-4. Загрузите ВСЕ файлы из папки hosting:
-   - index.html
-   - style.css
-   - папку img/ со всеми картинками
+1. Зайдите в панель reg.ru → Файловый менеджер
+2. Откройте папку public_html (или www/ваш-домен/)
+3. Загрузите ВСЕ файлы из папки hosting:
 
-Структура после загрузки:
+   index.html
+   style.css
+   ceremony/
+     index.html
+   img/
+     photo.png
+     schedule.png  (опционально — ваше расписание)
+     qr.png       (опционально — QR для связи)
+
+4. Контакты: отредактируйте index.html и ceremony/index.html
+   — замените @username, номер WhatsApp, email
+
+СТРУКТУРА НА СЕРВЕРЕ:
   public_html/
     index.html
     style.css
-    ceremony/
-      index.html   (страница asterius.pro/ceremony)
-    img/
-      photo.png
-      schedule.png  (добавьте своё расписание)
-      qr.png       (добавьте свой QR-код)
-
-Картинки опциональны — если их нет, покажутся подсказки.
-
-Контакты: отредактируйте index.html — замените @username, номер, email.
+    ceremony/index.html
+    img/photo.png, schedule.png, qr.png

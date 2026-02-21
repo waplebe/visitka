@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Индивидуальные церемонии — Enlightenment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="stars"></div>
-    
+    <div class="bg-stars"></div>
+    <div class="bg-glow"></div>
+
+    <nav class="nav">
+        <a href="../index.html">Главная</a>
+        <a href="../index.html#practices">Практики</a>
+        <a href="../index.html#contact">Контакты</a>
+    </nav>
+
     <header class="hero">
-        <h1>Индивидуальные церемонии</h1>
-        <p><a href="../index.html" style="color:#d4af37">← На главную</a></p>
+        <div class="hero-om">ॐ</div>
+        <h1 class="hero-title">Индивидуальные церемонии</h1>
+        <p class="hero-subtitle"><a href="../index.html" class="back-link">← На главную</a></p>
     </header>
 
     <main>
-        <section>
-            <div class="box">
+        <section class="section">
+            <div class="content-block">
                 <p>Проводим индивидуальные церемонии в очном и онлайн формате. Каждая церемония — это глубокое путешествие с учётом ваших потребностей и намерений.</p>
                 <p>Мы создаём безопасное пространство для трансформации и интеграции опыта.</p>
             </div>
         </section>
 
-        <section>
-            <h2>Форматы</h2>
-            <div class="box">
-                <ul>
+        <section class="section">
+            <h2 class="section-title">Форматы</h2>
+            <div class="content-block">
+                <ul class="program-list">
                     <li>Очные церемонии в Священной Долине</li>
                     <li>Ceremony Online — участие удалённо</li>
                     <li>Подготовка и интеграция</li>
@@ -33,16 +44,20 @@
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Записаться</h2>
-            <div class="contacts">
-                <p>Telegram: <a href="https://t.me/username">@username</a></p>
-                <p>WhatsApp: <a href="https://wa.me/79001234567">+7 900 123-45-67</a></p>
-                <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Записаться</h2>
+            <div class="contact-block">
+                <div class="contact-links" style="margin:0 auto">
+                    <a href="https://t.me/username" class="contact-btn" target="_blank" rel="noopener">Telegram</a>
+                    <a href="https://wa.me/79001234567" class="contact-btn" target="_blank" rel="noopener">WhatsApp</a>
+                    <a href="mailto:hello@example.com" class="contact-btn">Email</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>Enlightenment — Свет и практики в Священной Долине</footer>
+    <footer class="footer">
+        <p>Enlightenment — Свет и практики в Священной Долине</p>
+    </footer>
 </body>
 </html>
