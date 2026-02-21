@@ -13,6 +13,8 @@
   public_html/
     index.html
     style.css
+    ceremony/
+      index.html   (страница asterius.pro/ceremony)
     img/
       photo.png
       schedule.png  (добавьте своё расписание)
