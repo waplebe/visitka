@@ -6,6 +6,7 @@
 
 - **Версия 1** (`1/`) — с изображениями (services.png, who-we-are.png, schedule.png)
 - **Версия 2** (`2/`) — полностью интерактивная (без изображений)
+- **Для reg.ru** (`hosting/`) — простая: HTML + CSS, без внешних зависимостей
 
 ## Запуск
 
@@ -21,12 +22,6 @@ npx serve .
 visitka/
 ├── index.html      # Выбор версии
 ├── 1/              # Версия с изображениями
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── assets/
-└── 2/              # Интерактивная версия
-    ├── index.html
-    ├── styles.css
-    └── script.js
+├── 2/              # Интерактивная версия
+└── hosting/        # Для reg.ru (HTML + CSS, img/)
 ```
