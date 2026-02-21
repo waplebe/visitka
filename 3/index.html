@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlightenment — Практики и Ретриты в Священной Долине</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars-bg"></div>
+    
+    <nav class="nav">
+        <a href="#services">Практики</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#sacred-valley">Священная Долина</a>
+        <a href="#retreat">Ретрит</a>
+        <a href="#who-we-are">О нас</a>
+        <a href="#ceremonies">Церемонии</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="om-symbol">ॐ</div>
+            <h1 class="logo">Enlightenment</h1>
+            <p class="tagline">Практики, техники и ретриты в Священной Долине</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Услуги — фото + интерактивные карточки -->
+        <section id="services" class="section">
+            <h2 class="section-title">Наши практики</h2>
+            <div class="services-image">
+                <img src="assets/services.png" alt="Услуги: SOMAYA, Medicina Sagrada, SOMA, Kundalini Yoga, Mentoring">
+            </div>
+            <div class="services-interactive">
+                <div class="om-center">ॐ</div>
+                <div class="services-orbit">
+                    <div class="service-card interactive golden" data-service="somaya">
+                        <span class="service-name">SOMAYA</span>
+                        <div class="service-desc">Древняя практика пробуждения энергии</div>
+                    </div>
+                    <div class="service-card interactive golden" data-service="medicina">
+                        <span class="service-name">Medicina Sagrada</span>
+                        <div class="service-desc">Работа с священными растениями</div>
+                    </div>
+                    <div class="service-card interactive golden" data-service="ceremony-online">
+                        <span class="service-name">Ceremony Online</span>
+                        <div class="service-desc">Церемонии в онлайн-формате</div>
+                    </div>
+                    <div class="service-card interactive" data-service="soma">
+                        <span class="service-name">SOMA</span>
+                        <div class="service-desc">Практики тела и духа</div>
+                    </div>
+                    <div class="service-card interactive" data-service="kundalini">
+                        <span class="service-name">Kundalini Yoga</span>
+                        <div class="service-desc">Пробуждение энергии кундалини</div>
+                    </div>
+                    <div class="service-card interactive" data-service="mentoring">
+                        <span class="service-name">Mentoring</span>
+                        <div class="service-desc">Индивидуальное сопровождение</div>
+                    </div>
+                    <div class="service-card interactive" data-service="mentoring-online">
+                        <span class="service-name">Mentoring Online</span>
+                        <div class="service-desc">Менторство онлайн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-modal" id="service-modal">
+                <div class="service-modal-content">
+                    <button class="modal-close" aria-label="Закрыть">&times;</button>
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-desc"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Расписание — фото + интерактив -->
+        <section id="schedule" class="section schedule-section">
+            <h2 class="section-title">Недельное расписание</h2>
+            <div class="schedule-image-block">
+                <img src="assets/schedule.png" alt="Расписание на неделю" onerror="this.src='assets/schedule-placeholder.svg';this.alt='Загрузите schedule.png';">
+            </div>
+            <div class="schedule-interactive">
+                <div class="schedule-days">
+                    <button class="day-btn active" data-day="0">Пн</button>
+                    <button class="day-btn" data-day="1">Вт</button>
+                    <button class="day-btn" data-day="2">Ср</button>
+                    <button class="day-btn" data-day="3">Чт</button>
+                    <button class="day-btn" data-day="4">Пт</button>
+                    <button class="day-btn" data-day="5">Сб</button>
+                    <button class="day-btn" data-day="6">Вс</button>
+                </div>
+                <div class="schedule-content" id="schedule-content"></div>
+            </div>
+        </section>
+
+        <!-- Священная Долина — аккордеон -->
+        <section id="sacred-valley" class="section">
+            <h2 class="section-title">Предложения в Священной Долине</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">Ретриты</button>
+                    <div class="accordion-panel">
+                        <p>Многодневные ретриты в местах силы. Погружение в практики, природу и тишину.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Церемонии</button>
+                    <div class="accordion-panel">
+                        <p>Церемонии в священных местах долины. Работа с энергией и намерениями.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Индивидуальные сессии</button>
+                    <div class="accordion-panel">
+                        <p>Персональные практики с учётом ваших целей и потребностей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Программа ретрита — интерактивный чеклист -->
+        <section id="retreat" class="section">
+            <h2 class="section-title">Базовая программа ретрита</h2>
+            <div class="retreat-checklist">
+                <label class="retreat-item"><input type="checkbox"><span>Утренние практики кундалини-йоги</span></label>
+                <label class="retreat-item"><input type="checkbox"><span>Церемонии и медитации</span></label>
+                <label class="retreat-item"><input type="checkbox"><span>Работа с Medicina Sagrada</span></label>
+                <label class="retreat-item"><input type="checkbox"><span>Менторство и индивидуальные сессии</span></label>
+                <label class="retreat-item"><input type="checkbox"><span>Практики SOMA и SOMAYA</span></label>
+                <label class="retreat-item"><input type="checkbox"><span>Питание и интеграция</span></label>
+            </div>
+        </section>
+
+        <!-- Кто мы — фото семьи + текст -->
+        <section id="who-we-are" class="section">
+            <h2 class="section-title">Кто мы</h2>
+            <div class="who-we-are-block">
+                <div class="family-photo">
+                    <img src="assets/who-we-are.png" alt="Наша семья">
+                </div>
+                <div class="content-box who-we-text">
+                    <p>Мы — семья практиков, объединённых любовью к духовным традициям и желанием делиться светом. Наш путь ведёт через Священную Долину, где мы создаём пространство для пробуждения и трансформации.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Индивидуальные церемонии -->
+        <section id="ceremonies" class="section">
+            <h2 class="section-title">Индивидуальные церемонии</h2>
+            <div class="content-box">
+                <p>Проводим индивидуальные церемонии в очном и онлайн формате. Каждая церемония — это глубокое путешествие с учётом ваших потребностей и намерений.</p>
+                <p><strong>Свяжитесь с нами</strong> для обсуждения деталей и записи.</p>
+                <a href="#contact" class="cta-btn">Записаться</a>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contact-interactive">
+                <div class="contact-buttons">
+                    <a href="https://t.me/your_username" class="contact-btn" target="_blank" rel="noopener">
+                        <span class="contact-icon">✈</span> Telegram
+                    </a>
+                    <a href="https://wa.me/79001234567" class="contact-btn" target="_blank" rel="noopener">
+                        <span class="contact-icon">📱</span> WhatsApp
+                    </a>
+                    <a href="mailto:hello@enlightenment.example" class="contact-btn">
+                        <span class="contact-icon">✉</span> Email
+                    </a>
+                </div>
+                <div class="contact-copy">
+                    <p>Или скопируйте контакт:</p>
+                    <div class="copy-field">
+                        <input type="text" value="+7 900 123-45-67" id="phone-copy" readonly>
+                        <button class="copy-btn" data-copy="phone-copy">Копировать</button>
+                    </div>
+                </div>
+                <div class="qr-generate">
+                    <p>QR-код для быстрой связи</p>
+                    <div id="qr-container"></div>
+                    <p class="qr-hint">Отсканируйте камерой телефона</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Enlightenment — Свет и практики в Священной Долине</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
