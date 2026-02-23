@@ -1,0 +1,267 @@
+/* Bhagavani Family v5 — Golden Luminous */
+
+:root {
+    --gold: #d4af37;
+    --gold-light: #f5e6c8;
+    --gold-deep: #b8860b;
+    --gold-bg: rgba(212, 175, 55, 0.08);
+    --cream: #faf8f5;
+    --dark: #1a0f1a;
+    --dark-mid: #2d1f2d;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+    background: linear-gradient(180deg, #1a0f1a 0%, #2d2028 30%, #3d2a35 50%, #2d2028 70%, #1a0f1a 100%);
+    color: var(--cream);
+    min-height: 100vh;
+    line-height: 1.7;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse 100% 60% at 50% 0%, rgba(212, 175, 55, 0.12) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Header */
+.header {
+    position: relative;
+    z-index: 10;
+    padding: 1.5rem 1.5rem 2rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--gold-light);
+    letter-spacing: 0.15em;
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.lang-btn {
+    padding: 0.35rem 0.6rem;
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: var(--gold-light);
+    font-family: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.lang-btn:hover, .lang-btn.active {
+    background: rgba(212, 175, 55, 0.2);
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.nav a {
+    color: var(--gold-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav a:hover { color: var(--gold); }
+
+/* Main */
+main {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+.page-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2em;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin: 2rem 0 1rem;
+    letter-spacing: 0.1em;
+}
+
+/* Schedule image */
+.schedule-img-wrap {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.schedule-img-wrap img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
+}
+
+/* Cards grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.ceremony-card {
+    padding: 1.25rem;
+    background: rgba(45, 31, 45, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 10px;
+}
+
+.ceremony-card .price {
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin-top: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--gold);
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover { background: var(--gold-light); }
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+.btn-outline:hover {
+    background: rgba(212, 175, 55, 0.2);
+}
+
+/* Text blocks */
+.text-block {
+    padding: 1.5rem;
+    background: rgba(45, 31, 45, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    margin: 1rem 0;
+}
+
+.text-block ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.text-block li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.text-block li::before {
+    content: '•';
+    color: var(--gold);
+    margin-left: -1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* About photos */
+.about-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.about-photos img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Housing gallery */
+.housing-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.housing-gallery img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Retreat dates */
+.dates-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.date-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: rgba(245, 230, 200, 0.7);
+}
+
+.om-closing {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-top: 0.5rem;
+}
